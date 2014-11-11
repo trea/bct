@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#if [ x = x${2} ]; then
+   # BC_SIG = $(bct complete)
+    #sed -i.bak -e "1s/^/[$BC_SIG] /" $1
+#fi
+
+BC_SIG = $(bct complete)
+sed -i.bak -e "1s/^/[$BC_SIG] /" $1
